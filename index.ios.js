@@ -12,14 +12,17 @@ import {
   View
 } from 'react-native';
 
-import TouchableDemo from './TouchableDemo';
+/**按钮事件Demo**/
+import TouchableDemo from './Demo/TouchableDemo';
+
+
+//Flexbox布局
+import FlexboxDemo from './Demo/FlexboxDemo'
 
 class RE0_ReactNative extends Component {
   render() {
     return (
-        <View style={styles.container}>
-            <TouchableDemo/>
-        </View>
+        <FlexboxDemo/>
     );
   }
 }

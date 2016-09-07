@@ -3,7 +3,7 @@
   1、'use strict';
     -使用严格
   
-  1、添加按钮以及state的使用
+  2、添加按钮以及state的使用
     -TouchableDemo.js
         --TouchableHighlight 
             ---underlayColor={'#ff0000'} 表示点击时的颜色
@@ -19,4 +19,9 @@
    
             
     
-    
+  3、使用Flexbox布局
+    -FlexboxDemo.js
+        --flexDirection 
+            row:沿着水平轴方向排列
+            column:沿着竖直轴方向排列(默认)
+     
