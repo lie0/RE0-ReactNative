@@ -1,6 +1,9 @@
 /**
  * lih
  * 16/9/7
+ *
+ * flex布局demo
+ *
  */
 'use strict';
 
@@ -32,6 +35,7 @@ export default class FlexboxDemo extends Component {
                     <Text style={styles.welcome}>这是第三个容器</Text>
                 </View>
             </View>
+
         );
     }
 }
