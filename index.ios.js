@@ -9,7 +9,8 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Navigator
 } from 'react-native';
 
 /**按钮事件Demo**/
@@ -19,10 +20,25 @@ import TouchableDemo from './Demo/TouchableDemo';
 //Flexbox布局
 import FlexboxDemo from './Demo/FlexboxDemo'
 
+
+//Navigator导航
+import NavigatorDemo from './Demo/NavigatorDemo'
+
 class RE0_ReactNative extends Component {
   render() {
+    let defaultName = 'NavigatorDemo';
+    //首页的容器
+    let defaultComponent = NavigatorDemo;
     return (
-        <FlexboxDemo/>
+        <Navigator
+            initialRoute={{ name: defaultName, component: defaultComponent }}
+            configureScene={(route) => {
+                return Navigator.SceneConfigs.HorizontalSwipeJump;
+              }}
+            renderScene={(route, navigator) => {
+                let Component = route.component;
+                return <Component {...route.params} navigator={navigator} />
+              }} />
     );
   }
 }

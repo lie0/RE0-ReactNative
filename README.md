@@ -27,7 +27,7 @@
         --flex 主容器一定要设置该属性,不然会造成不显示的情况
      
      
-  4、导航 
-    -
+  4、导航 Navigator
+    -NavigatorDemo.js
     
     
