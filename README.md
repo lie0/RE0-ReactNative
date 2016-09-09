@@ -29,5 +29,4 @@
      
   4、导航 Navigator
     -NavigatorDemo.js
-    
-    这是一个测试
+   
